@@ -3,7 +3,7 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import services.PrintServiceT;
+import services.PrintService;
 
 public class Program {
 
@@ -12,18 +12,18 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		PrintServiceT<String> ps = new PrintServiceT<>();
+		PrintService ps = new PrintService();
 		
 		System.out.print("How many values? ");
 		int n = sc.nextInt();
 		
 		for (int i = 0; i < n; i++) {
-			String value = sc.next();
+			Integer value = sc.nextInt();
 			ps.addValue(value);
 		}
 		
 		ps.print();
-		String x = ps.first();
+		Integer x = ps.first();
 		System.out.println("First: " + x);
 		
 		sc.close();
