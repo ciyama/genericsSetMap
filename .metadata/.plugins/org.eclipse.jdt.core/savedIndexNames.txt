@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/home/celio/Documents/Udemy/java/genericsSetMap/.metadata/.plugins/org.eclipse.jdt.core
+592963367.index
+646308851.index
