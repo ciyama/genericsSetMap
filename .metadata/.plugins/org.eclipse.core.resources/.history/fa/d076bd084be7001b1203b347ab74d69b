@@ -6,15 +6,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import services.CalculationService;
-
 public class Program {
 
 	public static void main(String[] args) {
 		
 		List<Integer> list = new ArrayList<>();
 		
-		String path = "/home/celio/Documents/Udemy/java/genericsSetMap/in.txt";
+		String path = "/home/celio/Documents/Udemy/java/genericsSetMap/in.txt"
 				
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 			
@@ -25,7 +23,7 @@ public class Program {
 			}
 			
 			Integer x = CalculationService.max(list);
-			System.out.println("Max: " + x);
+			System.out.println("Max: ");
 			System.out.println(x);
 			
 		} catch (IOException e) {
